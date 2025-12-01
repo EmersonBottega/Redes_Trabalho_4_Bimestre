@@ -1,20 +1,21 @@
 # Redes_Trabalho_4-_Bimestre
 
-Para executar a aplicação sem precisar de root:
-```ruby
-# Instalar rbenv localmente
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
+Objetivos dessa aplicação:
 
-# Instalar ruby-build (para instalar versões Ruby)
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+Receber como entrada duas informações: o endereço IP e máscara de rede, representado no formato IP/MR. Ex: 192.168.258.250/24.
 
-# Instalar versão do ruby: 3.2.2
-rbenv install 3.2.2
-rbenv global 3.2.2
+A partir destas informações, apresentamos:
+- o endereço da rede
+- o endereço de broadcast
+- o primeiro endereço IP de hosts na rede
+- o último endereço IP de hosts na rede
 
-# Verificar versão
-ruby -v
-```
+Desenvolvido em Python.
+
+Exemplo:
+Entrada:
+192.168.258.250/24
+Saída:
+Rede: 192.168.248.0
+Broadcast: 192.168.248.255
+Hosts: de 192.168.248.1 a 192.168.248.254
