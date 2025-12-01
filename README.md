@@ -1,4 +1,4 @@
-# Redes_Trabalho_4-_Bimestre
+# Redes_Trabalho_4_Bimestre
 
 Objetivos dessa aplicação:
 
@@ -13,9 +13,13 @@ A partir destas informações, apresentamos:
 Desenvolvido em Python.
 
 Exemplo:
+```
 Entrada:
 192.168.258.250/24
+```
+```
 Saída:
 Rede: 192.168.248.0
 Broadcast: 192.168.248.255
 Hosts: de 192.168.248.1 a 192.168.248.254
+```
